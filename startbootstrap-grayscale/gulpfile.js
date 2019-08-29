@@ -12,6 +12,7 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const port = process.env.PORT || 3000;
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -120,6 +121,10 @@ function watchFiles() {
   gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
+
+// gulp.listen(port, () => {
+//   console.log("App is running on port " + port);
+// });
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
