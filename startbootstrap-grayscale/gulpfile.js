@@ -122,7 +122,7 @@ function watchFiles() {
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
-// gulp.listen(port, () => {
+// gulpfile.listen(port, () => {
 //   console.log("App is running on port " + port);
 // });
 
