@@ -3,7 +3,9 @@
     "name": "startbootstrap-grayscale",
     "version": "5.0.8",
     "scripts": {
-        "start": "node_modules/.bin/gulp"
+        // "start": "node_modules/.bin/gulp"
+        "start": "node app",
+  "postinstall": "gulp default" 
     },
     "description": "A grayscale one page HTML theme for Bootstrap.",
     "keywords": [
